@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ros2_6dof_bringup</name>
+  <version>0.0.0</version>
+  <description>Module khởi chạy tổng hợp toàn bộ hệ thống cánh tay robot 6 DOF</description>
+  <maintainer email="nhat@todo.todo">Nguyen Xuan Nhat</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Gọi đến các module khác trong dự án -->
+  <exec_depend>ros2_6dof_description</exec_depend>
+  <exec_depend>ros2_6dof_gazebo</exec_depend>
+  <exec_depend>ros2_6dof_control</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
