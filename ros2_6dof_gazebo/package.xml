@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ros2_6dof_gazebo</name>
+  <version>0.0.0</version>
+  <description>Module cấu hình môi trường và mô phỏng cánh tay robot 6 DOF trên Gazebo</description>
+  <maintainer email="nhat@todo.todo">Nguyen Xuan Nhat</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Các thư viện cần thiết cho Gazebo -->
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_plugins</depend>
+  <!-- Liên kết với module chứa mô hình vật lý -->
+  <depend>ros2_6dof_description</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
